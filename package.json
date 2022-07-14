@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "type": "module",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {},
+  "description": "[![Actions Status](https://github.com/Tvelse/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Tvelse/frontend-project-lvl1/actions)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tvelse/frontend-project-lvl1.git"
+  },
+  "author": "Tvelse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tvelse/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Tvelse/frontend-project-lvl1#readme"
+}
