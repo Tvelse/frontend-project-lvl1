@@ -4,5 +4,6 @@ const helloQuestion = () => {
   console.log('May i have your name?');
   const name = readlineSync.question('Your answer: ');
   console.log(`Hello, ${name}!`);
+  return name;
 };
 export default helloQuestion;
