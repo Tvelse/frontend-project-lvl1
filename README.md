@@ -3,3 +3,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/977fe8211b78a7636e8f/maintainability)](https://codeclimate.com/github/Tvelse/frontend-project-lvl1/maintainability)
 https://asciinema.org/a/1QALpGOtHa2Mmccp9acI8xi4I
 https://asciinema.org/a/r20rwLWL5ef7EEGEztKgGG8gU
+https://asciinema.org/a/pX4ZvDmAJ9CdLRNrwhBKaBheF
