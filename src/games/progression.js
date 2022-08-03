@@ -2,27 +2,26 @@ import start from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
 const description = 'What number is missing in the progression?';
-const progressionLength = 10;
 
-const getProgression = () => {
-  let progressionNumber = getRandomNumber(0, 50);
-  const transition = getRandomNumber(2, 5);
+const getProgression = (firstStep, step, length) => {
   const progression = [];
 
-  for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(progressionNumber);
-    progressionNumber += transition;
+  for (let i = 0; i < length; i += 1) {
+    progression.push(firstStep + i * step);
   }
+
   return progression;
 };
 
 const getQuestionAndAnswer = () => {
-  const progression = getProgression();
-  const randomIndex = getRandomNumber(0, progressionLength);
-
-  const correctAnswer = String(progression[randomIndex]);
-  progression[randomIndex] = '..';
-  const question = progression;
+  const firstStep = getRandomNumber(0, 5);
+  const step = getRandomNumber(1, 5);
+  const length = getRandomNumber(10, 15);
+  const progression = getProgression(firstStep, step, length);
+  const hiddenNumber = getRandomNumber(0, progression.length - 1);
+  const correctAnswer = progression[hiddenNumber].toString();
+  progression[hiddenNumber] = '..';
+  const question = progression.join(' ');
 
   return [question, correctAnswer];
 };
